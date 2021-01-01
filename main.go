@@ -2,7 +2,6 @@ package main
 
 import (
 	"flag"
-	"metadata-searcher/handler"
 )
 
 var (
@@ -16,7 +15,8 @@ func init() {
 }
 
 func main() {
-	handler.BingSearch(*domain, *fileType)
+	bingSearch(*domain, *fileType)
+	googleSearch(*domain, *fileType)
 
-	// TODO: Run handlers/google.go and handlers/bing.go seperately and collect the results in a channel
+	// TODO: Run seperately and collect the results in a channel
 }
