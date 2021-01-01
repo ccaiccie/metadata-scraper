@@ -39,5 +39,6 @@ func Handler(i int, s *goquery.Selection) {
 		return
 	}
 
-	log.Printf("%21s %s - %s %s\n", cp.Creator, cp.LastModifiedBy, ap.Application, ap.GetMajorVersion())
+	log.Printf("\nCreator = %s\nLast Modified By = %s\nApplication = %s %s\n\n\n", cp.Creator, cp.LastModifiedBy,
+		ap.Application, ap.GetMajorVersion())
 }
