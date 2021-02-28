@@ -18,3 +18,4 @@ builds:
       - amd64
     ldflags:
       - -s -w
+    main: ./cmd/metadata-scraper/main.go
