@@ -1,4 +1,4 @@
-package main
+package office
 
 import (
 	"encoding/xml"
@@ -26,7 +26,7 @@ var officeVersions = map[string]string{
 	"11": "2003",
 }
 
-func (a *officeAppProperty) getMajorVersion() string {
+func (a *officeAppProperty) GetMajorVersion() string {
 	tokens := strings.Split(a.Version, ".")
 
 	if len(tokens) < 2 {

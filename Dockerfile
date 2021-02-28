@@ -12,4 +12,4 @@ FROM alpine:latest
 WORKDIR /opt/
 COPY --from=builder /app/metadata-scraper .
 
-CMD ["./nginx-conf-generator"]
+CMD ["./metadata-scraper"]

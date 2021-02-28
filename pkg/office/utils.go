@@ -1,11 +1,11 @@
-package main
+package office
 
 import (
 	"archive/zip"
 	"encoding/xml"
 )
 
-func newProperties(r *zip.Reader) (*officeCoreProperty, *officeAppProperty, error) {
+func NewProperties(r *zip.Reader) (*officeCoreProperty, *officeAppProperty, error) {
 	var coreProps officeCoreProperty
 	var appProps officeAppProperty
 
@@ -31,7 +31,13 @@ func process(f *zip.File, prop interface{}) error {
 	if err != nil {
 		return err
 	}
-	defer rc.Close()
+
+	defer func() {
+		err := rc.Close()
+		if err != nil {
+			panic(err)
+		}
+	}()
 
 	if err := xml.NewDecoder(rc).Decode(prop); err != nil {
 		return err

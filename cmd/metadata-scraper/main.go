@@ -2,6 +2,7 @@ package main
 
 import (
 	flag "github.com/spf13/pflag"
+	"metadata-scraper/pkg/handlers"
 )
 
 var (
@@ -15,8 +16,8 @@ func init() {
 }
 
 func main() {
-	bingSearch(domain, fileType)
-	googleSearch(domain, fileType)
+	handlers.BingSearch(domain, fileType)
+	handlers.GoogleSearch(domain, fileType)
 
 	// TODO: Run seperately and collect the results in a channel
 }
