@@ -64,7 +64,6 @@ func GoogleSearch(domain, fileType string) {
 	}
 	req.Header.Set("User-Agent", "Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:84.0) Gecko/20100101 Firefox/84.0")
 
-
 	res, err := client.Do(req)
 	if err != nil {
 		return
@@ -101,7 +100,6 @@ func BingSearch(domain, fileType string) {
 		log.Fatalln(err)
 	}
 	req.Header.Set("User-Agent", "Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:84.0) Gecko/20100101 Firefox/84.0")
-
 
 	res, err := client.Do(req)
 	if err != nil {
