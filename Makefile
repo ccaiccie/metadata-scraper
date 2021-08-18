@@ -7,6 +7,17 @@ build:
 run:
 	go run cmd/metadata-scraper/main.go
 
+fmt:
+	go fmt ./...
+
+vet:
+	go vet ./...
+
+ineffassign:
+	go get github.com/gordonklaus/ineffassign
+	go mod vendor
+	ineffassign ./...
+
 cross-compile:
 	# 32-Bit Systems
 	# FreeBDS
