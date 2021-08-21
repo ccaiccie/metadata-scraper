@@ -3,8 +3,8 @@ package main
 import (
 	"github.com/dimiro1/banner"
 	"io/ioutil"
-	"metadata-scraper/pkg/handlers"
-	"metadata-scraper/pkg/options"
+	"metadata-scraper/internal/handlers"
+	"metadata-scraper/internal/options"
 	"os"
 	"strings"
 )

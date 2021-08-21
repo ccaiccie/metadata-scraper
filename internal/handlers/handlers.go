@@ -7,7 +7,7 @@ import (
 	"github.com/PuerkitoBio/goquery"
 	"io/ioutil"
 	"log"
-	"metadata-scraper/pkg/office"
+	"metadata-scraper/internal/office"
 	"net/http"
 	"net/url"
 )
