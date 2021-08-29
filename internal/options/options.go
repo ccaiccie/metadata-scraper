@@ -18,13 +18,13 @@ func GetMetadataScraperOptions() *MetadataScraperOptions {
 
 // MetadataScraperOptions contains frequent command line and application options.
 type MetadataScraperOptions struct {
-	// Domain is the target to search
+	// Domain is the target domain to search on search engines
 	Domain string
 	// FileType is the file type to search for on the specified domain
 	FileType string
 }
 
 func (mso *MetadataScraperOptions) addFlags(fs *pflag.FlagSet) {
-	fs.StringVar(&mso.Domain, "domain", "nytimes.com", "domain of the target to search")
+	fs.StringVar(&mso.Domain, "domain", "nytimes.com", "target domain to search on search engines")
 	fs.StringVar(&mso.FileType, "fileType", "docx", "file type to search for on the specified domain")
 }
