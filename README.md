@@ -3,6 +3,9 @@
 [![Docker pulls](https://img.shields.io/docker/pulls/bilalcaliskan/metadata-scraper)](https://hub.docker.com/r/bilalcaliskan/metadata-scraper/)
 [![Go Report Card](https://goreportcard.com/badge/github.com/bilalcaliskan/metadata-scraper)](https://goreportcard.com/report/github.com/bilalcaliskan/metadata-scraper)
 [![codecov](https://codecov.io/gh/bilalcaliskan/metadata-scraper/branch/master/graph/badge.svg)](https://codecov.io/gh/bilalcaliskan/metadata-scraper)
+[![Release](https://img.shields.io/github/release/bilalcaliskan/metadata-scraper.svg)](https://github.com/bilalcaliskan/metadata-scraper/releases/latest)
+[![Go version](https://img.shields.io/github/go-mod/go-version/bilalcaliskan/metadata-scraper)](https://github.com/bilalcaliskan/metadata-scraper)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 This tool searches Bing and Google search engines for specific `domain` and docx files and fetch information from these docx files.
 
@@ -30,5 +33,9 @@ $ docker run bilalcaliskan/metadata-scraper:latest
 
 ## Development
 This project requires below tools while developing:
+- [Golang 1.16](https://golang.org/doc/go1.16)
 - [pre-commit](https://pre-commit.com/)
 - [golangci-lint](https://golangci-lint.run/usage/install/) - required by [pre-commit](https://pre-commit.com/)
+
+## License
+Apache License 2.0
