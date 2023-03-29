@@ -162,7 +162,7 @@ jobs:
         run: docker build . --file Dockerfile --tag bilalcaliskan/metadata-scraper:${{ steps.previoustag.outputs.tag }}
 
       - name: Publish to Registry
-        uses: elgohr/Publish-Docker-Github-Action@master
+        uses: elgohr/Publish-Docker-Github-Action@v5
         with:
           name: bilalcaliskan/metadata-scraper
           tags: "latest,${{ steps.previoustag.outputs.tag }}"
